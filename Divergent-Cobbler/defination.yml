@@ -2,18 +2,18 @@
 # defaults file for cobbler
 
 ### cobbler server
-cobbler_default_password: changE_me
-cobbler_default_time_zone: "Asia/Shanghai"   # America/New_York
+cobbler_default_password: welcome@123
+cobbler_default_time_zone: "Asia/Kolkata"   # America/New_York
 cobbler_manage_dhcp: 1 # default
 cobbler_pxe_just_once: 1
-cobbler_server: 192.168.168.200
-cobbler_next_server: 192.168.168.200
-cobbler_subnet: 192.168.168.0
+cobbler_server: 10.0.0.24
+cobbler_next_server: 10.0.0.24
+cobbler_subnet: 10.0.0.0
 cobbler_netmask: 255.255.255.0
-cobbler_dynamic_bootp_start: 192.168.168.128
-cobbler_dynamic_bootp_end: 192.168.168.172
-cobbler_routers: 192.168.168.1
-cobbler_domain_name_servers: 192.168.168.1
+cobbler_dynamic_bootp_start: 10.0.0.60
+cobbler_dynamic_bootp_end: 10.0.0.63
+cobbler_routers: 10.0.0.1
+cobbler_domain_name_servers: 10.0.0.1
 cobbler_subnet_mask: 255.255.255.0
 
 
@@ -22,18 +22,18 @@ cobbler_subnet_mask: 255.255.255.0
 cobbler_install_web: true
 cobbler_web_user_pwd:
  - user_name: cobbler
-   password: Change!me
+   password: welcome@123
  - user_name: test1
-   password: Change@me
+   password: welcome@123
 
 
 
 # import distros
-cobbler_distros:
-  - distro_name: CentOS-7.1-sda
-    device_or_iso_path: /dev/sr0
-    arch: x86_64
-    kickstart_file_name: centos7-customized-sda
+#cobbler_distros:
+#  - distro_name: CentOS-7.1-sda
+#    device_or_iso_path: /dev/sr0
+#    arch: x86_64
+#    kickstart_file_name: centos7-customized-sda
 
 # public keys for root.(optional)
 # cobbler_root_public_keys:
