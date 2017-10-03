@@ -1,0 +1,2 @@
+gpgcheck = 0 for epel for cobbler installation 
+/etc/cobler/setting need proxy setting for cobbler get-loader to ru. This has been modified in template and variable
