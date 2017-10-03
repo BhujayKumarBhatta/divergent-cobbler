@@ -1,5 +1,6 @@
 - hosts: cobbler
-  vars_files: defination.yml
+  vars_files: 
+    - defination.yml
   become: true
   roles:
   - cobbler
