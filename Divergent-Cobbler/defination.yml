@@ -15,9 +15,6 @@ cobbler_dynamic_bootp_end: 10.0.0.63
 cobbler_routers: 10.0.0.1
 cobbler_domain_name_servers: 10.0.0.1
 cobbler_subnet_mask: 255.255.255.0
-
-
-
 # cobbler web
 cobbler_install_web: true
 cobbler_web_user_pwd:
@@ -25,22 +22,12 @@ cobbler_web_user_pwd:
    password: welcome@123
  - user_name: test1
    password: welcome@123
-
-
-
 # import distros
 #cobbler_distros:
 #  - distro_name: CentOS-7.1-sda
 #    device_or_iso_path: /dev/sr0
 #    arch: x86_64
 #    kickstart_file_name: centos7-customized-sda
-
 # public keys for root.(optional)
 # cobbler_root_public_keys:
 #  - sh-rsa abcdef
-
-
-
-
-
-
