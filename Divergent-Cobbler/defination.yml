@@ -15,7 +15,7 @@ cobbler_dynamic_bootp_end: 10.0.0.63
 cobbler_routers: 10.0.0.1
 cobbler_domain_name_servers: 10.0.0.1
 cobbler_subnet_mask: 255.255.255.0
-
+ext_proxy_for_cobbler: http://10.0.0.14:3128
 
 
 # cobbler web
