@@ -6,12 +6,12 @@ cobbler_default_password: welcome@123
 cobbler_default_time_zone: "Asia/Kolkata"   # America/New_York
 cobbler_manage_dhcp: 1 # default
 cobbler_pxe_just_once: 1
-cobbler_server: 10.0.0.24
-cobbler_next_server: 10.0.0.24
+cobbler_server: 10.0.0.10
+cobbler_next_server: 10.0.0.10
 cobbler_subnet: 10.0.0.0
 cobbler_netmask: 255.255.255.0
-cobbler_dynamic_bootp_start: 10.0.0.60
-cobbler_dynamic_bootp_end: 10.0.0.63
+cobbler_dynamic_bootp_start: 10.0.0.20
+cobbler_dynamic_bootp_end: 10.0.0.100
 cobbler_routers: 10.0.0.1
 cobbler_domain_name_servers: 10.0.0.1
 cobbler_subnet_mask: 255.255.255.0
