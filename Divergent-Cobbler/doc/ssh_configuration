@@ -1,0 +1,16 @@
+cd /etc/ssh
+copy sshd_config sshd_config.org~
+sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+#service sshd restart
+cd /root
+mkdir --mode=700 .ssh
+cat >> .ssh/authorized_keys << "PUBLIC_KEY"
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIUlqF2RcToymL06sZJwn6S8fbETN27M421rImSeY9CXYn4a4s93coAsj5ekYalFv+34/Y+6f0inpfYmn5fJhJDdhdD809nz9nA//tqiv19LhxXyVFR1dNbIqoOC5l4i74vY+oTnxgfL3FwxPDzh5ge4sxPfMQyk2U/CguWwT03mPcybxM5rfaa50D7J+1VRyfddG/Ptq3blx9Su5iQv+X0ZFeTshPEIgDz/0VGseberqy0gHyfHvBNllRw/Bq1yd8hGsZufoOKBBIhbQXKFv9dlvr+4w0auRzPwMTunxEulJaa/MWL+Wys30NTRuKCfAf4+IfXGHLrJFOTqDn8P2N root@ansible
+PUBLIC_KEY
+chmod 600 .ssh/authorized_keys
+cat >> .ssh/config <<EOF
+StrictHostKeyChecking no
+UserKnownHostsFile /dev/null
+EOF
+~
+~
